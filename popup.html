@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Funny Mod Menu</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+      background: #f4f4f4;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      margin: 4px 0 10px 0;
+      text-align: center;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      background: #fff;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 8px;
+      cursor: pointer;
+      user-select: none;
+      background: #eaeaea;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .section-body {
+      padding: 6px;
+      display: block;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      width: 100%;
+      margin: 4px 0;
+      padding: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid #bbb;
+      background: #fff;
+      text-align: left;
+    }
+
+    .btn:hover {
+      background: #eee;
+    }
+
+    /* ===== Sliders ===== */
+    .sliders {
+      margin-top: 10px;
+      padding-top: 6px;
+      border-top: 1px solid #ccc;
+    }
+
+    .slider-group {
+      margin: 8px 0;
+    }
+
+    label {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>funny mod menu</h3>
+
+  <!-- Sections get injected here -->
+  <div id="sections"></div>
+
+  <!-- Sliders -->
+  <div class="sliders">
+    <h4>Sliders</h4>
+
+    <div class="slider-group">
+      <label for="zoomSlider">Zoom</label>
+      <input id="zoomSlider" type="range" min="50" max="200" value="150">
+    </div>
+
+    <div class="slider-group">
+      <label for="blurSlider">Blur</label>
+      <input id="blurSlider" type="range" min="0" max="20" value="4">
+    </div>
+
+    <div class="slider-group">
+      <label for="tiltSlider">Tilt</label>
+      <input id="tiltSlider" type="range" min="-45" max="45" value="0">
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
