@@ -116,6 +116,14 @@ const siteMessages = [
     match: "rule34.xxx",
     message: "funny mod menu: what are you doing bro 💀"
   },
+  {
+    match: "mcdonalds.com",
+    message: "funny mod menu: i recommend the McChicken Sandwich 🔥"
+  },
+  {
+    match: "roblox.com/games/6516141723/DOORS#!/game-instances",
+    message: "funny mod menu: DOORS?!?!?!??"
+  },
 ];
 
 // ========= MESSAGE HANDLER =========
